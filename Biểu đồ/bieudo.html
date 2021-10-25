@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu đồ - Covid-19</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">c<span class="fas fa-virus"></span>VID-19</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="../index.html">trang chủ</a></li>
+                <li><a href="./Biểu đồ/bieudo.html">biểu đồ</a></li>
+            </ul>
+        </nav>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>THỐNG KÊ TÌNH HÌNH DỊCH BỆNH <span style="color: #6549DA;">COVID-19</span> CỦA TOÀN THẾ GIỚI</h1>
+
+        <form autocomplete="off">
+            <input type="text" name="srch" id="srch" required list="countries" placeholder="Nhập tên quốc gia">
+            <datalist id="countries"></datalist>
+            <button>Tìm kiếm</button>
+        </form>
+        <h2 id="name-country" style="font-size: 40px; color: #6549DA;"></h2>
+        <div class="content">
+            <div class="box confirmed">
+                <p style="color: black;">Số ca nhiễm</p>
+                <h3 style="color:#6549DA; font-size: 20px;">0</h3>
+                <i style="color: black; font-size: 1px;">0</i>
+            </div>
+            <div class="box deaths">
+                <p>Số ca tử vong</p>
+                <h3 style="color:#6549DA; font-size: 20px;">0</h3>
+                <i style="color: black; font-size: 1px;">0</i>
+            </div>
+            <div class="box recovered">
+                <p>Đã bình phục</p>
+                <h3 style="color:#6549DA; font-size: 20px;">0</h3>
+                <i style="color: black; font-size: 1px;">0</i>
+            </div>
+        </div>
+        <div class="chart"></div>
+        <h3 id="date"></h3>
+    </div>
+    <script src="./app.js"></script>
+
+    <section class="footer">
+
+        <div class="contact">
+            <div class="social-link">
+                <a href="mailto:trunglaptrinh2009@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/tx3developers/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/trunglaptrinh">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/Tx3Developers">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/Tx3Developers">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="contact-letter">
+                <p>&copy; 2021 <a href="https://github.com/trunglaptrinh">TrungLapTrinh</a>. Source code by <a href="https://github.com/ooAkira">ooAkira</a></p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
